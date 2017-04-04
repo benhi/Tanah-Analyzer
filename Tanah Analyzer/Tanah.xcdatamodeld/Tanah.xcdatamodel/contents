@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName=".Book" syncable="YES" codeGenerationType="category">
+        <attribute name="countChapters" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="heTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Chapter" inverseName="book" inverseEntity="Chapter" syncable="YES"/>
+    </entity>
+    <entity name="Chapter" representedClassName=".Chapter" syncable="YES" codeGenerationType="category">
+        <attribute name="countVerses" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="heNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unique" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="chapters" inverseEntity="Book" syncable="YES"/>
+        <relationship name="verses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Verse" inverseName="chapter" inverseEntity="Verse" syncable="YES"/>
+    </entity>
+    <entity name="Verse" representedClassName=".Verse" syncable="YES" codeGenerationType="category">
+        <attribute name="countWords" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="heNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unique" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chapter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chapter" inverseName="verses" inverseEntity="Chapter" syncable="YES"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="verse" inverseEntity="Word" syncable="YES"/>
+    </entity>
+    <entity name="Word" representedClassName=".Word" syncable="YES" codeGenerationType="category">
+        <attribute name="countCharacter" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unique" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="verse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Verse" inverseName="words" inverseEntity="Verse" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="-1170" positionY="-99" width="128" height="105"/>
+        <element name="Chapter" positionX="-972" positionY="-99" width="128" height="135"/>
+        <element name="Verse" positionX="-783" positionY="-99" width="128" height="150"/>
+        <element name="Word" positionX="-576" positionY="-99" width="128" height="120"/>
+    </elements>
+</model>

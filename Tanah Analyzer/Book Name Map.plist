@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key> <string>01 Genesis</string>
+	<key>2</key> <string>02 Exodus</string>
+    <key>3</key> <string>03 Leviticus</string>
+    <key>4</key> <string>04 Numbers</string>
+    <key>5</key> <string>05 Deuteronomy</string>
+    <key>6</key> <string>06 Joshua</string>
+    <key>7</key> <string>07 Judges</string>
+    <key>8</key> <string>08 I Samuel</string>
+    <key>9</key> <string>09 II Samuel</string>
+    <key>10</key> <string>10 I Kings</string>
+    <key>11</key> <string>11 II Kings</string>
+    <key>12</key> <string>12 Isaiah</string>
+    <key>13</key> <string>13 Jeremiah</string>
+    <key>14</key> <string>14 Ezekiel</string>
+    <key>15</key> <string>15 Hosea</string>
+    <key>16</key> <string>16 Joel</string>
+    <key>17</key> <string>17 Amos</string>
+    <key>18</key> <string>18 Obadiah</string>
+    <key>19</key> <string>19 Jonah</string>
+    <key>20</key> <string>20 Micah</string>
+    <key>21</key> <string>21 Nahum</string>
+    <key>22</key> <string>22 Habakkuk</string>
+    <key>23</key> <string>23 Zephaniah</string>
+    <key>24</key> <string>24 Haggai</string>
+    <key>25</key> <string>25 Zechariah</string>
+    <key>26</key> <string>26 Malachi</string>
+    <key>27</key> <string>27 Psalms</string>
+    <key>28</key> <string>28 Proverbs</string>
+    <key>29</key> <string>29 Job</string>
+    <key>30</key> <string>30 Song of Songs</string>
+    <key>31</key> <string>31 Ruth</string>
+    <key>32</key> <string>32 Lamentations</string>
+    <key>33</key> <string>33 Ecclesiastes</string>
+    <key>34</key> <string>34 Esther</string>
+    <key>35</key> <string>35 Daniel</string>
+    <key>36</key> <string>36 Ezra</string>
+    <key>37</key> <string>37 Nehemiah</string>
+    <key>38</key> <string>38 I Chronicles</string>
+    <key>39</key> <string>39 II Chronicles</string>
+</dict>
+</plist>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NJj-Uu-rMV">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="sEc-vC-jXK">
+            <objects>
+                <navigationController id="NJj-Uu-rMV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="34B-gw-z3a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0tb-dj-6i0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4I-3f-n8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1139" y="-215"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tanah_Analyzer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-U6-tz0">
+                                <rect key="frame" x="341.5" y="64" width="682.5" height="704"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="104" id="KqB-z2-wyo">
+                                        <rect key="frame" x="0.0" y="28" width="683" height="104"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KqB-z2-wyo" id="fxH-34-mD2">
+                                            <rect key="frame" x="0.0" y="0.0" width="683" height="104"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="בראשית" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uG3-K3-zkE">
+                                                    <rect key="frame" x="617" y="8" width="57" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="פרק" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXN-vh-1f9">
+                                                    <rect key="frame" x="579.5" y="8" width="27.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ב" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzs-BI-8Gh">
+                                                    <rect key="frame" x="564.5" y="8" width="10" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="פסוק" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5B-zS-vM2">
+                                                    <rect key="frame" x="521.5" y="8" width="33" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="30" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ב" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efq-4H-aPm">
+                                                    <rect key="frame" x="506.5" y="8" width="10" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="40" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TND-ki-KW5">
+                                                    <rect key="frame" x="0.0" y="37" width="672.5" height="58.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uG3-K3-zkE" firstAttribute="leading" secondItem="oXN-vh-1f9" secondAttribute="trailing" constant="10" id="6Ws-hp-upt"/>
+                                                <constraint firstItem="TND-ki-KW5" firstAttribute="leading" secondItem="fxH-34-mD2" secondAttribute="leading" id="DIl-xA-1xE"/>
+                                                <constraint firstItem="uG3-K3-zkE" firstAttribute="top" secondItem="fxH-34-mD2" secondAttribute="top" constant="8" id="MJh-Dz-fSr"/>
+                                                <constraint firstItem="u5B-zS-vM2" firstAttribute="leading" secondItem="efq-4H-aPm" secondAttribute="trailing" constant="5" id="Ppv-Co-ytb"/>
+                                                <constraint firstItem="u5B-zS-vM2" firstAttribute="top" secondItem="fxH-34-mD2" secondAttribute="top" constant="8" id="UGd-fp-GzC"/>
+                                                <constraint firstItem="TND-ki-KW5" firstAttribute="top" secondItem="uG3-K3-zkE" secondAttribute="bottom" constant="8" id="WQc-jv-ryj"/>
+                                                <constraint firstItem="oXN-vh-1f9" firstAttribute="leading" secondItem="vzs-BI-8Gh" secondAttribute="trailing" constant="5" id="bsK-YA-JHe"/>
+                                                <constraint firstItem="vzs-BI-8Gh" firstAttribute="top" secondItem="fxH-34-mD2" secondAttribute="top" constant="8" id="gPG-oo-2xb"/>
+                                                <constraint firstItem="vzs-BI-8Gh" firstAttribute="leading" secondItem="u5B-zS-vM2" secondAttribute="trailing" constant="10" id="n48-36-QTt"/>
+                                                <constraint firstAttribute="bottom" secondItem="TND-ki-KW5" secondAttribute="bottom" constant="8" id="nKm-s9-pTS"/>
+                                                <constraint firstAttribute="trailing" secondItem="TND-ki-KW5" secondAttribute="trailing" constant="10" id="nz3-1i-wTv"/>
+                                                <constraint firstItem="efq-4H-aPm" firstAttribute="top" secondItem="fxH-34-mD2" secondAttribute="top" constant="8" id="pd3-la-qtj"/>
+                                                <constraint firstItem="oXN-vh-1f9" firstAttribute="top" secondItem="fxH-34-mD2" secondAttribute="top" constant="8" id="tUh-5R-XOV"/>
+                                                <constraint firstAttribute="trailing" secondItem="uG3-K3-zkE" secondAttribute="trailing" constant="8" id="uoe-Qe-Soq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="YPg-Sd-etW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9ec-F3-Cv7"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kl-kE-G1m">
+                                <rect key="frame" x="0.0" y="64" width="341.5" height="704"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombres de mots dans un פסוק" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WgV-pU-9Lk">
+                                        <rect key="frame" x="8" y="8" width="325.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="search"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="vQg-2a-hiu"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chercher un mot dans le תנ״ך" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ovh-uc-3QG">
+                                        <rect key="frame" x="8" y="46" width="325.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="textFieldSearchWordTextDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="LID-Jf-nl1"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="yCZ-dm-RSj"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chercher un mot dans le תנ״ך" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wpL-NW-OT4">
+                                        <rect key="frame" x="8" y="84" width="325.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="textFieldContainsStringInWordDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="z16-H4-Y6V"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="aLN-4e-XR5"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chercher un groupe de mot dans le תנ״ך" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K1Q-0C-R9p">
+                                        <rect key="frame" x="8" y="122" width="325.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="textFieldSearchGroupOfWordInVerseTextDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="JiD-D9-cvD"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="9Yw-4P-ZAw"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chercher un ספר dans le תנ״ך" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jrz-Qt-gAd">
+                                        <rect key="frame" x="8" y="160" width="325.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="textFieldSearchBookDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="gAM-n7-pYB"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="9eu-g1-8T5"/>
+                                        </connections>
+                                    </textField>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gdr-kb-sYn">
+                                        <rect key="frame" x="8" y="198" width="325.5" height="498"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookNameCell" id="6ai-EQ-6vX">
+                                                <rect key="frame" x="0.0" y="28" width="325" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6ai-EQ-6vX" id="iQ5-YK-cPf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="325" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A66-HH-grx">
+                                                            <rect key="frame" x="275.5" y="11" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="A66-HH-grx" secondAttribute="trailing" constant="8" id="62b-UH-sog"/>
+                                                        <constraint firstItem="A66-HH-grx" firstAttribute="centerY" secondItem="iQ5-YK-cPf" secondAttribute="centerY" id="etv-eN-Xhv"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="Pkk-V8-zil"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="SMa-S7-EyW"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jrz-Qt-gAd" firstAttribute="top" secondItem="K1Q-0C-R9p" secondAttribute="bottom" constant="8" id="7YW-oG-Act"/>
+                                    <constraint firstItem="wpL-NW-OT4" firstAttribute="top" secondItem="ovh-uc-3QG" secondAttribute="bottom" constant="8" id="8vU-D3-Ebk"/>
+                                    <constraint firstItem="ovh-uc-3QG" firstAttribute="leading" secondItem="5kl-kE-G1m" secondAttribute="leading" constant="8" id="A7U-Hu-XiM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gdr-kb-sYn" secondAttribute="bottom" constant="8" id="Gvy-TV-m8y"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gdr-kb-sYn" secondAttribute="trailing" constant="8" id="IfG-tB-TPs"/>
+                                    <constraint firstItem="WgV-pU-9Lk" firstAttribute="leading" secondItem="5kl-kE-G1m" secondAttribute="leading" constant="8" id="P8j-p7-Tlb"/>
+                                    <constraint firstItem="ovh-uc-3QG" firstAttribute="top" secondItem="WgV-pU-9Lk" secondAttribute="bottom" constant="8" id="Por-9z-b16"/>
+                                    <constraint firstAttribute="trailing" secondItem="WgV-pU-9Lk" secondAttribute="trailing" constant="8" id="RL1-cm-ud6"/>
+                                    <constraint firstItem="WgV-pU-9Lk" firstAttribute="top" secondItem="5kl-kE-G1m" secondAttribute="top" constant="8" id="TRC-Nr-24G"/>
+                                    <constraint firstItem="K1Q-0C-R9p" firstAttribute="top" secondItem="wpL-NW-OT4" secondAttribute="bottom" constant="8" id="Twt-MA-7Gp"/>
+                                    <constraint firstItem="jrz-Qt-gAd" firstAttribute="leading" secondItem="5kl-kE-G1m" secondAttribute="leading" constant="8" id="UqH-qG-v1o"/>
+                                    <constraint firstItem="wpL-NW-OT4" firstAttribute="leading" secondItem="5kl-kE-G1m" secondAttribute="leading" constant="8" id="aeT-I6-QdC"/>
+                                    <constraint firstAttribute="trailing" secondItem="ovh-uc-3QG" secondAttribute="trailing" constant="8" id="ihJ-vm-QbL"/>
+                                    <constraint firstAttribute="trailing" secondItem="jrz-Qt-gAd" secondAttribute="trailing" constant="8" id="lJG-o0-dvu"/>
+                                    <constraint firstItem="K1Q-0C-R9p" firstAttribute="leading" secondItem="5kl-kE-G1m" secondAttribute="leading" constant="8" id="o1L-sB-MwW"/>
+                                    <constraint firstAttribute="trailing" secondItem="wpL-NW-OT4" secondAttribute="trailing" constant="8" id="okK-BO-KnJ"/>
+                                    <constraint firstItem="Gdr-kb-sYn" firstAttribute="leading" secondItem="5kl-kE-G1m" secondAttribute="leading" constant="8" id="pDX-aR-MNX"/>
+                                    <constraint firstItem="Gdr-kb-sYn" firstAttribute="top" secondItem="jrz-Qt-gAd" secondAttribute="bottom" constant="8" id="wGS-Ku-2gq"/>
+                                    <constraint firstAttribute="trailing" secondItem="K1Q-0C-R9p" secondAttribute="trailing" constant="8" id="zbz-Vx-xcG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5kl-kE-G1m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6UU-X7-7bs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fBr-U6-tz0" secondAttribute="bottom" id="BLD-WW-tSB"/>
+                            <constraint firstAttribute="trailing" secondItem="fBr-U6-tz0" secondAttribute="trailing" id="BpH-so-N66"/>
+                            <constraint firstItem="fBr-U6-tz0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MvH-fM-PCl"/>
+                            <constraint firstItem="5kl-kE-G1m" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="RFS-bk-iUY"/>
+                            <constraint firstItem="fBr-U6-tz0" firstAttribute="leading" secondItem="5kl-kE-G1m" secondAttribute="trailing" id="Yuo-77-LFX"/>
+                            <constraint firstItem="5kl-kE-G1m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pIf-FA-iNJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5kl-kE-G1m" secondAttribute="bottom" id="pRq-I3-Aaf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LHY-nW-hcw"/>
+                    <connections>
+                        <outlet property="TextFieldSearchBook" destination="jrz-Qt-gAd" id="12x-vI-qlI"/>
+                        <outlet property="tableViewAnalizer" destination="fBr-U6-tz0" id="Fiw-nV-j4w"/>
+                        <outlet property="tableViewAutoComplete" destination="Gdr-kb-sYn" id="hrA-yu-tMS"/>
+                        <outlet property="textFieldContainsStringInWord" destination="wpL-NW-OT4" id="ieG-KY-yWm"/>
+                        <outlet property="textFieldNumOfWordInVerse" destination="WgV-pU-9Lk" id="ag6-M0-btk"/>
+                        <outlet property="textFieldSearchGroupOfWordInVerse" destination="K1Q-0C-R9p" id="4Zk-hL-z7O"/>
+                        <outlet property="textFieldSearchWord" destination="ovh-uc-3QG" id="24g-Rt-BDL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277.1484375" y="-216.40625"/>
+        </scene>
+    </scenes>
+</document>

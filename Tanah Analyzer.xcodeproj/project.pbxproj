@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4354EE371E8957320069B7FF /* Book Name Map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4354EE361E8957320069B7FF /* Book Name Map.plist */; };
+		436EA3521E8BC39300078819 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EA3511E8BC39300078819 /* Constants.swift */; };
+		439F7FAC1E890039001E0A79 /* Hebrew Numeral Map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 439F7FAB1E890039001E0A79 /* Hebrew Numeral Map.plist */; };
+		439F7FB01E89291B001E0A79 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439F7FAF1E89291B001E0A79 /* Util.swift */; };
+		43BF32481E89497600FE7EBD /* 01 Genesis.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32211E89497600FE7EBD /* 01 Genesis.json */; };
+		43BF32491E89497600FE7EBD /* 02 Exodus.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32221E89497600FE7EBD /* 02 Exodus.json */; };
+		43BF324A1E89497600FE7EBD /* 03 Leviticus.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32231E89497600FE7EBD /* 03 Leviticus.json */; };
+		43BF324B1E89497600FE7EBD /* 04 Numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32241E89497600FE7EBD /* 04 Numbers.json */; };
+		43BF324C1E89497600FE7EBD /* 05 Deuteronomy.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32251E89497600FE7EBD /* 05 Deuteronomy.json */; };
+		43BF324D1E89497600FE7EBD /* 06 Joshua.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32261E89497600FE7EBD /* 06 Joshua.json */; };
+		43BF324E1E89497600FE7EBD /* 07 Judges.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32271E89497600FE7EBD /* 07 Judges.json */; };
+		43BF324F1E89497600FE7EBD /* 08 I Samuel.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32281E89497600FE7EBD /* 08 I Samuel.json */; };
+		43BF32501E89497600FE7EBD /* 09 II Samuel.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32291E89497600FE7EBD /* 09 II Samuel.json */; };
+		43BF32511E89497600FE7EBD /* 10 I Kings.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF322A1E89497600FE7EBD /* 10 I Kings.json */; };
+		43BF32521E89497600FE7EBD /* 11 II Kings.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF322B1E89497600FE7EBD /* 11 II Kings.json */; };
+		43BF32531E89497600FE7EBD /* 12 Isaiah.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF322C1E89497600FE7EBD /* 12 Isaiah.json */; };
+		43BF32541E89497600FE7EBD /* 13 Jeremiah.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF322D1E89497600FE7EBD /* 13 Jeremiah.json */; };
+		43BF32551E89497600FE7EBD /* 14 Ezekiel.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF322E1E89497600FE7EBD /* 14 Ezekiel.json */; };
+		43BF32561E89497600FE7EBD /* 15 Hosea.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF322F1E89497600FE7EBD /* 15 Hosea.json */; };
+		43BF32571E89497600FE7EBD /* 16 Joel.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32301E89497600FE7EBD /* 16 Joel.json */; };
+		43BF32581E89497600FE7EBD /* 17 Amos.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32311E89497600FE7EBD /* 17 Amos.json */; };
+		43BF32591E89497600FE7EBD /* 18 Obadiah.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32321E89497600FE7EBD /* 18 Obadiah.json */; };
+		43BF325A1E89497600FE7EBD /* 19 Jonah.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32331E89497600FE7EBD /* 19 Jonah.json */; };
+		43BF325B1E89497600FE7EBD /* 20 Micah.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32341E89497600FE7EBD /* 20 Micah.json */; };
+		43BF325C1E89497600FE7EBD /* 21 Nahum.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32351E89497600FE7EBD /* 21 Nahum.json */; };
+		43BF325D1E89497600FE7EBD /* 22 Habakkuk.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32361E89497600FE7EBD /* 22 Habakkuk.json */; };
+		43BF325E1E89497600FE7EBD /* 23 Zephaniah.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32371E89497600FE7EBD /* 23 Zephaniah.json */; };
+		43BF325F1E89497600FE7EBD /* 24 Haggai.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32381E89497600FE7EBD /* 24 Haggai.json */; };
+		43BF32601E89497600FE7EBD /* 25 Zechariah.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32391E89497600FE7EBD /* 25 Zechariah.json */; };
+		43BF32611E89497600FE7EBD /* 26 Malachi.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF323A1E89497600FE7EBD /* 26 Malachi.json */; };
+		43BF32621E89497600FE7EBD /* 27 Psalms.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF323B1E89497600FE7EBD /* 27 Psalms.json */; };
+		43BF32631E89497600FE7EBD /* 28 Proverbs.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF323C1E89497600FE7EBD /* 28 Proverbs.json */; };
+		43BF32641E89497600FE7EBD /* 29 Job.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF323D1E89497600FE7EBD /* 29 Job.json */; };
+		43BF32651E89497600FE7EBD /* 30 Song of Songs.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF323E1E89497600FE7EBD /* 30 Song of Songs.json */; };
+		43BF32661E89497600FE7EBD /* 31 Ruth.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF323F1E89497600FE7EBD /* 31 Ruth.json */; };
+		43BF32671E89497600FE7EBD /* 32 Lamentations.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32401E89497600FE7EBD /* 32 Lamentations.json */; };
+		43BF32681E89497600FE7EBD /* 33 Ecclesiastes.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32411E89497600FE7EBD /* 33 Ecclesiastes.json */; };
+		43BF32691E89497600FE7EBD /* 34 Esther.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32421E89497600FE7EBD /* 34 Esther.json */; };
+		43BF326A1E89497600FE7EBD /* 35 Daniel.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32431E89497600FE7EBD /* 35 Daniel.json */; };
+		43BF326B1E89497600FE7EBD /* 36 Ezra.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32441E89497600FE7EBD /* 36 Ezra.json */; };
+		43BF326C1E89497600FE7EBD /* 37 Nehemiah.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32451E89497600FE7EBD /* 37 Nehemiah.json */; };
+		43BF326D1E89497600FE7EBD /* 38 I Chronicles.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32461E89497600FE7EBD /* 38 I Chronicles.json */; };
+		43BF326E1E89497600FE7EBD /* 39 II Chronicles.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BF32471E89497600FE7EBD /* 39 II Chronicles.json */; };
+		43EF56B61E83B33800610F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF56B51E83B33800610F04 /* AppDelegate.swift */; };
+		43EF56B81E83B33800610F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF56B71E83B33800610F04 /* ViewController.swift */; };
+		43EF56BB1E83B33800610F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EF56B91E83B33800610F04 /* Main.storyboard */; };
+		43EF56C01E83B33800610F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EF56BF1E83B33800610F04 /* Assets.xcassets */; };
+		43EF56C31E83B33800610F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EF56C11E83B33800610F04 /* LaunchScreen.storyboard */; };
+		43EF56CC1E83B34600610F04 /* Tanah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43EF56CA1E83B34600610F04 /* Tanah.xcdatamodeld */; };
+		43EF56CF1E83CA1400610F04 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF56CE1E83CA1400610F04 /* Book.swift */; };
+		43EF56D11E83CA7200610F04 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF56D01E83CA7200610F04 /* Chapter.swift */; };
+		43F628531E8792E600CA7037 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F628521E8792E600CA7037 /* Word.swift */; };
+		43F628551E87930300CA7037 /* Verse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F628541E87930300CA7037 /* Verse.swift */; };
+		43F628571E879CF100CA7037 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F628561E879CF100CA7037 /* Parser.swift */; };
+		43F628591E879D6300CA7037 /* BHBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F628581E879D6300CA7037 /* BHBook.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4354EE361E8957320069B7FF /* Book Name Map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Book Name Map.plist"; sourceTree = "<group>"; };
+		436EA3511E8BC39300078819 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		439F7FAB1E890039001E0A79 /* Hebrew Numeral Map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Hebrew Numeral Map.plist"; sourceTree = "<group>"; };
+		439F7FAF1E89291B001E0A79 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		43BB50F91E90E92900B26011 /* Tanah.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tanah.sqlite; sourceTree = "<group>"; };
+		43BB50FA1E90E92900B26011 /* Tanah.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tanah.sqlite-shm"; sourceTree = "<group>"; };
+		43BB50FB1E90E92900B26011 /* Tanah.sqlite-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tanah.sqlite-wal"; sourceTree = "<group>"; };
+		43BF32211E89497600FE7EBD /* 01 Genesis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "01 Genesis.json"; sourceTree = "<group>"; };
+		43BF32221E89497600FE7EBD /* 02 Exodus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "02 Exodus.json"; sourceTree = "<group>"; };
+		43BF32231E89497600FE7EBD /* 03 Leviticus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "03 Leviticus.json"; sourceTree = "<group>"; };
+		43BF32241E89497600FE7EBD /* 04 Numbers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "04 Numbers.json"; sourceTree = "<group>"; };
+		43BF32251E89497600FE7EBD /* 05 Deuteronomy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "05 Deuteronomy.json"; sourceTree = "<group>"; };
+		43BF32261E89497600FE7EBD /* 06 Joshua.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "06 Joshua.json"; sourceTree = "<group>"; };
+		43BF32271E89497600FE7EBD /* 07 Judges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "07 Judges.json"; sourceTree = "<group>"; };
+		43BF32281E89497600FE7EBD /* 08 I Samuel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "08 I Samuel.json"; sourceTree = "<group>"; };
+		43BF32291E89497600FE7EBD /* 09 II Samuel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "09 II Samuel.json"; sourceTree = "<group>"; };
+		43BF322A1E89497600FE7EBD /* 10 I Kings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "10 I Kings.json"; sourceTree = "<group>"; };
+		43BF322B1E89497600FE7EBD /* 11 II Kings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "11 II Kings.json"; sourceTree = "<group>"; };
+		43BF322C1E89497600FE7EBD /* 12 Isaiah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "12 Isaiah.json"; sourceTree = "<group>"; };
+		43BF322D1E89497600FE7EBD /* 13 Jeremiah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "13 Jeremiah.json"; sourceTree = "<group>"; };
+		43BF322E1E89497600FE7EBD /* 14 Ezekiel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "14 Ezekiel.json"; sourceTree = "<group>"; };
+		43BF322F1E89497600FE7EBD /* 15 Hosea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "15 Hosea.json"; sourceTree = "<group>"; };
+		43BF32301E89497600FE7EBD /* 16 Joel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "16 Joel.json"; sourceTree = "<group>"; };
+		43BF32311E89497600FE7EBD /* 17 Amos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "17 Amos.json"; sourceTree = "<group>"; };
+		43BF32321E89497600FE7EBD /* 18 Obadiah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "18 Obadiah.json"; sourceTree = "<group>"; };
+		43BF32331E89497600FE7EBD /* 19 Jonah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "19 Jonah.json"; sourceTree = "<group>"; };
+		43BF32341E89497600FE7EBD /* 20 Micah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "20 Micah.json"; sourceTree = "<group>"; };
+		43BF32351E89497600FE7EBD /* 21 Nahum.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "21 Nahum.json"; sourceTree = "<group>"; };
+		43BF32361E89497600FE7EBD /* 22 Habakkuk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "22 Habakkuk.json"; sourceTree = "<group>"; };
+		43BF32371E89497600FE7EBD /* 23 Zephaniah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "23 Zephaniah.json"; sourceTree = "<group>"; };
+		43BF32381E89497600FE7EBD /* 24 Haggai.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "24 Haggai.json"; sourceTree = "<group>"; };
+		43BF32391E89497600FE7EBD /* 25 Zechariah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "25 Zechariah.json"; sourceTree = "<group>"; };
+		43BF323A1E89497600FE7EBD /* 26 Malachi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "26 Malachi.json"; sourceTree = "<group>"; };
+		43BF323B1E89497600FE7EBD /* 27 Psalms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "27 Psalms.json"; sourceTree = "<group>"; };
+		43BF323C1E89497600FE7EBD /* 28 Proverbs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "28 Proverbs.json"; sourceTree = "<group>"; };
+		43BF323D1E89497600FE7EBD /* 29 Job.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "29 Job.json"; sourceTree = "<group>"; };
+		43BF323E1E89497600FE7EBD /* 30 Song of Songs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "30 Song of Songs.json"; sourceTree = "<group>"; };
+		43BF323F1E89497600FE7EBD /* 31 Ruth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "31 Ruth.json"; sourceTree = "<group>"; };
+		43BF32401E89497600FE7EBD /* 32 Lamentations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "32 Lamentations.json"; sourceTree = "<group>"; };
+		43BF32411E89497600FE7EBD /* 33 Ecclesiastes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "33 Ecclesiastes.json"; sourceTree = "<group>"; };
+		43BF32421E89497600FE7EBD /* 34 Esther.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "34 Esther.json"; sourceTree = "<group>"; };
+		43BF32431E89497600FE7EBD /* 35 Daniel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "35 Daniel.json"; sourceTree = "<group>"; };
+		43BF32441E89497600FE7EBD /* 36 Ezra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "36 Ezra.json"; sourceTree = "<group>"; };
+		43BF32451E89497600FE7EBD /* 37 Nehemiah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "37 Nehemiah.json"; sourceTree = "<group>"; };
+		43BF32461E89497600FE7EBD /* 38 I Chronicles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "38 I Chronicles.json"; sourceTree = "<group>"; };
+		43BF32471E89497600FE7EBD /* 39 II Chronicles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "39 II Chronicles.json"; sourceTree = "<group>"; };
+		43EF56B21E83B33800610F04 /* Tanah Analyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tanah Analyzer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EF56B51E83B33800610F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43EF56B71E83B33800610F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43EF56BA1E83B33800610F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43EF56BF1E83B33800610F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43EF56C21E83B33800610F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43EF56C41E83B33800610F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43EF56CB1E83B34600610F04 /* Tanah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tanah.xcdatamodel; sourceTree = "<group>"; };
+		43EF56CE1E83CA1400610F04 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		43EF56D01E83CA7200610F04 /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		43F628521E8792E600CA7037 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		43F628541E87930300CA7037 /* Verse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verse.swift; sourceTree = "<group>"; };
+		43F628561E879CF100CA7037 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		43F628581E879D6300CA7037 /* BHBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BHBook.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43EF56AF1E83B33800610F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		439F7FB11E893537001E0A79 /* Useful */ = {
+			isa = PBXGroup;
+			children = (
+				439F7FAF1E89291B001E0A79 /* Util.swift */,
+				436EA3511E8BC39300078819 /* Constants.swift */,
+				439F7FAB1E890039001E0A79 /* Hebrew Numeral Map.plist */,
+				4354EE361E8957320069B7FF /* Book Name Map.plist */,
+			);
+			name = Useful;
+			sourceTree = "<group>";
+		};
+		43BF326F1E89498300FE7EBD /* JSON Data */ = {
+			isa = PBXGroup;
+			children = (
+				43BF32211E89497600FE7EBD /* 01 Genesis.json */,
+				43BF32221E89497600FE7EBD /* 02 Exodus.json */,
+				43BF32231E89497600FE7EBD /* 03 Leviticus.json */,
+				43BF32241E89497600FE7EBD /* 04 Numbers.json */,
+				43BF32251E89497600FE7EBD /* 05 Deuteronomy.json */,
+				43BF32261E89497600FE7EBD /* 06 Joshua.json */,
+				43BF32271E89497600FE7EBD /* 07 Judges.json */,
+				43BF32281E89497600FE7EBD /* 08 I Samuel.json */,
+				43BF32291E89497600FE7EBD /* 09 II Samuel.json */,
+				43BF322A1E89497600FE7EBD /* 10 I Kings.json */,
+				43BF322B1E89497600FE7EBD /* 11 II Kings.json */,
+				43BF322C1E89497600FE7EBD /* 12 Isaiah.json */,
+				43BF322D1E89497600FE7EBD /* 13 Jeremiah.json */,
+				43BF322E1E89497600FE7EBD /* 14 Ezekiel.json */,
+				43BF322F1E89497600FE7EBD /* 15 Hosea.json */,
+				43BF32301E89497600FE7EBD /* 16 Joel.json */,
+				43BF32311E89497600FE7EBD /* 17 Amos.json */,
+				43BF32321E89497600FE7EBD /* 18 Obadiah.json */,
+				43BF32331E89497600FE7EBD /* 19 Jonah.json */,
+				43BF32341E89497600FE7EBD /* 20 Micah.json */,
+				43BF32351E89497600FE7EBD /* 21 Nahum.json */,
+				43BF32361E89497600FE7EBD /* 22 Habakkuk.json */,
+				43BF32371E89497600FE7EBD /* 23 Zephaniah.json */,
+				43BF32381E89497600FE7EBD /* 24 Haggai.json */,
+				43BF32391E89497600FE7EBD /* 25 Zechariah.json */,
+				43BF323A1E89497600FE7EBD /* 26 Malachi.json */,
+				43BF323B1E89497600FE7EBD /* 27 Psalms.json */,
+				43BF323C1E89497600FE7EBD /* 28 Proverbs.json */,
+				43BF323D1E89497600FE7EBD /* 29 Job.json */,
+				43BF323E1E89497600FE7EBD /* 30 Song of Songs.json */,
+				43BF323F1E89497600FE7EBD /* 31 Ruth.json */,
+				43BF32401E89497600FE7EBD /* 32 Lamentations.json */,
+				43BF32411E89497600FE7EBD /* 33 Ecclesiastes.json */,
+				43BF32421E89497600FE7EBD /* 34 Esther.json */,
+				43BF32431E89497600FE7EBD /* 35 Daniel.json */,
+				43BF32441E89497600FE7EBD /* 36 Ezra.json */,
+				43BF32451E89497600FE7EBD /* 37 Nehemiah.json */,
+				43BF32461E89497600FE7EBD /* 38 I Chronicles.json */,
+				43BF32471E89497600FE7EBD /* 39 II Chronicles.json */,
+			);
+			name = "JSON Data";
+			sourceTree = "<group>";
+		};
+		43BF32701E8949A300FE7EBD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				43EF56CA1E83B34600610F04 /* Tanah.xcdatamodeld */,
+				43EF56CE1E83CA1400610F04 /* Book.swift */,
+				43EF56D01E83CA7200610F04 /* Chapter.swift */,
+				43F628541E87930300CA7037 /* Verse.swift */,
+				43F628521E8792E600CA7037 /* Word.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		43BF32711E8949B200FE7EBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43BB50F91E90E92900B26011 /* Tanah.sqlite */,
+				43BB50FA1E90E92900B26011 /* Tanah.sqlite-shm */,
+				43BB50FB1E90E92900B26011 /* Tanah.sqlite-wal */,
+				43F628561E879CF100CA7037 /* Parser.swift */,
+				43F628581E879D6300CA7037 /* BHBook.swift */,
+				43BF32701E8949A300FE7EBD /* CoreData */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		43EF56A91E83B33800610F04 = {
+			isa = PBXGroup;
+			children = (
+				43EF56B41E83B33800610F04 /* Tanah Analyzer */,
+				43EF56B31E83B33800610F04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43EF56B31E83B33800610F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43EF56B21E83B33800610F04 /* Tanah Analyzer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43EF56B41E83B33800610F04 /* Tanah Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				439F7FB11E893537001E0A79 /* Useful */,
+				43BF326F1E89498300FE7EBD /* JSON Data */,
+				43BF32711E8949B200FE7EBD /* Model */,
+				43EF56B91E83B33800610F04 /* Main.storyboard */,
+				43EF56B71E83B33800610F04 /* ViewController.swift */,
+				43EF56CD1E83B3DB00610F04 /* Supporting Files */,
+			);
+			path = "Tanah Analyzer";
+			sourceTree = "<group>";
+		};
+		43EF56CD1E83B3DB00610F04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43EF56B51E83B33800610F04 /* AppDelegate.swift */,
+				43EF56BF1E83B33800610F04 /* Assets.xcassets */,
+				43EF56C11E83B33800610F04 /* LaunchScreen.storyboard */,
+				43EF56C41E83B33800610F04 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43EF56B11E83B33800610F04 /* Tanah Analyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43EF56C71E83B33800610F04 /* Build configuration list for PBXNativeTarget "Tanah Analyzer" */;
+			buildPhases = (
+				43EF56AE1E83B33800610F04 /* Sources */,
+				43EF56AF1E83B33800610F04 /* Frameworks */,
+				43EF56B01E83B33800610F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tanah Analyzer";
+			productName = "Tanah Analyzer";
+			productReference = 43EF56B21E83B33800610F04 /* Tanah Analyzer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43EF56AA1E83B33800610F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Benjamin HALIMI";
+				TargetAttributes = {
+					43EF56B11E83B33800610F04 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HHT4CXDA9K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 43EF56AD1E83B33800610F04 /* Build configuration list for PBXProject "Tanah Analyzer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43EF56A91E83B33800610F04;
+			productRefGroup = 43EF56B31E83B33800610F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43EF56B11E83B33800610F04 /* Tanah Analyzer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43EF56B01E83B33800610F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439F7FAC1E890039001E0A79 /* Hebrew Numeral Map.plist in Resources */,
+				43BF32591E89497600FE7EBD /* 18 Obadiah.json in Resources */,
+				43BF32571E89497600FE7EBD /* 16 Joel.json in Resources */,
+				43BF326A1E89497600FE7EBD /* 35 Daniel.json in Resources */,
+				43BF326E1E89497600FE7EBD /* 39 II Chronicles.json in Resources */,
+				43BF324D1E89497600FE7EBD /* 06 Joshua.json in Resources */,
+				43BF324B1E89497600FE7EBD /* 04 Numbers.json in Resources */,
+				4354EE371E8957320069B7FF /* Book Name Map.plist in Resources */,
+				43BF324C1E89497600FE7EBD /* 05 Deuteronomy.json in Resources */,
+				43BF325A1E89497600FE7EBD /* 19 Jonah.json in Resources */,
+				43BF326D1E89497600FE7EBD /* 38 I Chronicles.json in Resources */,
+				43BF32581E89497600FE7EBD /* 17 Amos.json in Resources */,
+				43BF32511E89497600FE7EBD /* 10 I Kings.json in Resources */,
+				43BF32481E89497600FE7EBD /* 01 Genesis.json in Resources */,
+				43BF32611E89497600FE7EBD /* 26 Malachi.json in Resources */,
+				43BF325D1E89497600FE7EBD /* 22 Habakkuk.json in Resources */,
+				43BF32561E89497600FE7EBD /* 15 Hosea.json in Resources */,
+				43BF32601E89497600FE7EBD /* 25 Zechariah.json in Resources */,
+				43BF32691E89497600FE7EBD /* 34 Esther.json in Resources */,
+				43BF32621E89497600FE7EBD /* 27 Psalms.json in Resources */,
+				43BF32631E89497600FE7EBD /* 28 Proverbs.json in Resources */,
+				43BF326C1E89497600FE7EBD /* 37 Nehemiah.json in Resources */,
+				43BF32541E89497600FE7EBD /* 13 Jeremiah.json in Resources */,
+				43BF324F1E89497600FE7EBD /* 08 I Samuel.json in Resources */,
+				43BF32671E89497600FE7EBD /* 32 Lamentations.json in Resources */,
+				43BF32681E89497600FE7EBD /* 33 Ecclesiastes.json in Resources */,
+				43BF326B1E89497600FE7EBD /* 36 Ezra.json in Resources */,
+				43BF32521E89497600FE7EBD /* 11 II Kings.json in Resources */,
+				43BF32501E89497600FE7EBD /* 09 II Samuel.json in Resources */,
+				43BF32651E89497600FE7EBD /* 30 Song of Songs.json in Resources */,
+				43BF32531E89497600FE7EBD /* 12 Isaiah.json in Resources */,
+				43BF32491E89497600FE7EBD /* 02 Exodus.json in Resources */,
+				43BF325F1E89497600FE7EBD /* 24 Haggai.json in Resources */,
+				43BF324A1E89497600FE7EBD /* 03 Leviticus.json in Resources */,
+				43EF56C31E83B33800610F04 /* LaunchScreen.storyboard in Resources */,
+				43EF56C01E83B33800610F04 /* Assets.xcassets in Resources */,
+				43BF325E1E89497600FE7EBD /* 23 Zephaniah.json in Resources */,
+				43BF325C1E89497600FE7EBD /* 21 Nahum.json in Resources */,
+				43EF56BB1E83B33800610F04 /* Main.storyboard in Resources */,
+				43BF32661E89497600FE7EBD /* 31 Ruth.json in Resources */,
+				43BF32551E89497600FE7EBD /* 14 Ezekiel.json in Resources */,
+				43BF324E1E89497600FE7EBD /* 07 Judges.json in Resources */,
+				43BF325B1E89497600FE7EBD /* 20 Micah.json in Resources */,
+				43BF32641E89497600FE7EBD /* 29 Job.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43EF56AE1E83B33800610F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F628551E87930300CA7037 /* Verse.swift in Sources */,
+				436EA3521E8BC39300078819 /* Constants.swift in Sources */,
+				43EF56CF1E83CA1400610F04 /* Book.swift in Sources */,
+				43EF56D11E83CA7200610F04 /* Chapter.swift in Sources */,
+				43EF56B81E83B33800610F04 /* ViewController.swift in Sources */,
+				43F628591E879D6300CA7037 /* BHBook.swift in Sources */,
+				43F628571E879CF100CA7037 /* Parser.swift in Sources */,
+				43EF56CC1E83B34600610F04 /* Tanah.xcdatamodeld in Sources */,
+				439F7FB01E89291B001E0A79 /* Util.swift in Sources */,
+				43EF56B61E83B33800610F04 /* AppDelegate.swift in Sources */,
+				43F628531E8792E600CA7037 /* Word.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43EF56B91E83B33800610F04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43EF56BA1E83B33800610F04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43EF56C11E83B33800610F04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43EF56C21E83B33800610F04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43EF56C51E83B33800610F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43EF56C61E83B33800610F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43EF56C81E83B33800610F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HHT4CXDA9K;
+				INFOPLIST_FILE = "Tanah Analyzer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HALIMI.Tanah-Analyzer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		43EF56C91E83B33800610F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HHT4CXDA9K;
+				INFOPLIST_FILE = "Tanah Analyzer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HALIMI.Tanah-Analyzer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43EF56AD1E83B33800610F04 /* Build configuration list for PBXProject "Tanah Analyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43EF56C51E83B33800610F04 /* Debug */,
+				43EF56C61E83B33800610F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43EF56C71E83B33800610F04 /* Build configuration list for PBXNativeTarget "Tanah Analyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43EF56C81E83B33800610F04 /* Debug */,
+				43EF56C91E83B33800610F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		43EF56CA1E83B34600610F04 /* Tanah.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				43EF56CB1E83B34600610F04 /* Tanah.xcdatamodel */,
+			);
+			currentVersion = 43EF56CB1E83B34600610F04 /* Tanah.xcdatamodel */;
+			path = Tanah.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 43EF56AA1E83B33800610F04 /* Project object */;
+}
