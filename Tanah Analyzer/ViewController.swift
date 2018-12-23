@@ -101,7 +101,7 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate
                         for (j, verse) in chapter.enumerated()
                         {
                             
-                            let split = verse.characters.split { [" ", "־"].contains(String($0)) }
+                            let split = verse.split { [" ", "־"].contains(String($0)) }
                             
                             //trim
                             let wordArray = split.map { String($0).trimmingCharacters(in: .whitespaces) }
@@ -118,7 +118,7 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate
                                 for (k, word) in wordArray.enumerated()
                                 {
                                     _ = try? Word.findOrCreatWord(unique: UUID().uuidString,
-                                                                  countCharacter: Int16(word.characters.count),
+                                                                  countCharacter: Int16(word.count),
                                                                   index: Int16(k+1),
                                                                   text: word,
                                                                   verse: DBVerse,
